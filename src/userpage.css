@@ -1,0 +1,30 @@
+/* CustomNavbar.css */
+
+/* Define the animation classes for the navbar using react-transition-group */
+.navbar-transition-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  .navbar-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .navbar-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .navbar-transition-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  /* Make sure the navbar-collapse class uses display:block to work with CSSTransition */
+  .collapse.navbar-collapse {
+    display: block !important;
+  }
+  

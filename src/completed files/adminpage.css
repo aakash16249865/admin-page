@@ -1,0 +1,9 @@
+.photo-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  border-radius: 40px; /* Optional: Add rounded corners */
+}
+
+.photo-card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensify shadow on hover */
+}
